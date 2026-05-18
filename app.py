@@ -10,6 +10,7 @@ st.set_page_config(page_title="Multiple Disease Prediction", layout="wide", page
 #heart_disease_model = pickle.load(open(f'{working_dir}/saved_models/heart.pkl', 'rb'))
 #kidney_disease_model = pickle.load(open(f'{working_dir}/saved_models/kidney.pkl', 'rb'))
 
+path = 'https://github.com/mskayla785/dheartclover/tree/main/'
 diabetes_model = pickle.load(open(path + 'saved_models/diabetes.pkl', 'rb'))
 heart_disease_model = pickle.load(open(path + 'saved_models/heart.pkl', 'rb'))
 kidney_disease_model = pickle.load(open(path + 'saved_models/kidney.pkl', 'rb'))
