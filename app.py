@@ -5,15 +5,10 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Multiple Disease Prediction", layout="wide", page_icon="👩‍🦰")
 
-#working_dir = os.path.dirname(os.path.abspath(__file__))
-#diabetes_model = pickle.load(open(f'{working_dir}/saved_models/diabetes.pkl', 'rb'))
-#heart_disease_model = pickle.load(open(f'{working_dir}/saved_models/heart.pkl', 'rb'))
-#kidney_disease_model = pickle.load(open(f'{working_dir}/saved_models/kidney.pkl', 'rb'))
-
-#path = 'https://github.com/mskayla785/dheartclover/tree/main/'
-diabetes_model = pickle.load(open('https://github.com/mskayla785/dheartclover/blob/main/saved_models/diabetes.pkl', 'rb'))
-heart_disease_model = pickle.load(open('https://github.com/mskayla785/dheartclover/blob/main/saved_models/heart.pkl', 'rb'))
-kidney_disease_model = pickle.load(open('https://github.com/mskayla785/dheartclover/blob/main/saved_models/kidney.pkl', 'rb'))
+working_dir = os.path.dirname(os.path.abspath(__file__))
+diabetes_model = pickle.load(open(f'{working_dir}/saved_models/diabetes.pkl', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/saved_models/heart.pkl', 'rb'))
+kidney_disease_model = pickle.load(open(f'{working_dir}/saved_models/kidney.pkl', 'rb'))
 
 NewBMI_Obesity_1 = 0
 NewBMI_Obesity_2 = 0
